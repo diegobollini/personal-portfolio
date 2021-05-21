@@ -4,16 +4,12 @@ import LinkButton from "./LinkButton";
 
 const LinkList = () => {
   const links = [
-    "https://docs.google.com/presentation/d/1r9JAXI3UXGQ3AT3hu6cBgOJJMiYquPVyeyxaaKBIgOM/edit?usp=sharing",
-    "https://sites.google.com/arbusta.net/plataformas",
-    "https://stats.uptimerobot.com/l7g7zf2MGN",
-    "https://arbusta.nubeadhoc.com/web#view_type=kanban&model=helpdesk.ticket&action=353&active_id=2&menu_id=231",
-    "https://arbusta.nubeadhoc.com/web#action=948&cids=1%2C4%2C5&menu_id=131",
-    "https://arbusta.nubeadhoc.com/",
-    "https://arbustanet.slack.com/",
-    "https://github.com/ArbustaIT",
-    "https://gitlab.com/arbustait",
-    "https://magic.ly/ciberarbusta",
+    "https://github.com/diegobollini/personal-portfolio",
+    "https://github.com/diegobollini",
+    "https://gitlab.com/diegobollini",
+    "https://www.linkedin.com/in/diegobollini/",
+    "https://twitter.com/diegobollini",
+    "https://www.polywork.com/bolli",
   ];
 
   return (
@@ -26,7 +22,7 @@ const LinkList = () => {
           src={`${process.env.PUBLIC_URL}/avatar_diego.png`}
           className="mb-3"
         />
-        <h5 className="mb-4 text-white">devops in process</h5>
+        <h5 className="mb-4 text-white">devops in evopslution (?)</h5>
         {links.map((link) => (
           <LinkButton key={link} link={link} />
         ))}

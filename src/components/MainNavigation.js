@@ -24,7 +24,7 @@ const MainNavigation = () => {
     <Navbar
       bg="dark"
       variant="dark"
-      style={{ padding: "10px", marginBottom: "20px" }}
+      style={{ padding: "10px", marginBottom: "10px" }}
     >
       <Navbar.Brand
         className="logo-font"
