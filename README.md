@@ -1,64 +1,54 @@
-# Getting Started with Create React App
+# Personal Portfolio with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and was made following this video / tutorial: [Build a Portfolio Website with React.js | LinkTree Clone](https://youtu.be/opfMRWpZRYk).  
 
-[Build a Portfolio Website with React.js | LinkTree Clone](https://youtu.be/opfMRWpZRYk)
+It's the evolution of this [project](https://github.com/diegobollini/links-like-a-tree) I have also forked (using HTML5 and SCSS).
 
+## node, dependencies & create app
 
+```bash
 $ node -v
 v15.14.0
 $ npm -v
 7.7.6
 $ npm install -g create-react-app
 $ npm install -g npm@7.14.0
-create-react-app portfolio-plataformas
-cd portfolio-plataformas
-npm start # http://localhost:3000/
+$ npm -v
+7.14.0
+$ create-react-app personal-portfolio
+$ cd personal-portfolio
+$ npm install
+$ npm start # http://localhost:3000/
+```
 
-### Reactjs code snippets
+### (Useful) reactjs code snippets for visual studio
 
-In VSC: `ext install xabikos.ReactSnippets`
+Install extension: `xabikos.ReactSnippets`
 
+### github
 
-I am usin github integration with VSC, so I just pushed this folder / project with 2 clicks (push and select public repository)
+I am using github integration with vsc, so I just pushed this folder / project with just 2 clicks (first push and then select public repository)... Done!
 
+## node libraries
 
-installing some libraries
-npm install @iconify/icons-simple-icons @iconify/react bootstrap node-sass react-router-dom
+```bash
+# install libraries
+$ npm install @iconify/icons-simple-icons @iconify/react bootstrap node-sass react-router-dom react-bootstrap
+```
 
-create index.scss in /src
+## issues: chokidar
 
-https://react-bootstrap.github.io/getting-started/introduction#sass
-npm install react-bootstrap
-/* The following line can be included in a src/index.scss */
-
-@import "~bootstrap/scss/bootstrap";
-
-
-## Estilos
-
-index.scss
-
-en los commits 4 / 5 npm start tira por ejemplo:
+```bash
 Error from chokidar (/home/diego/_desarrollo/portfolio-plataformas/node_modules/hoist-non-react-statics/node_modules/react-is/cjs): Error: ENOSPC: System limit for number of file watchers reached, watch '/home/diego/_desarrollo/portfolio-plataformas/node_modules/hoist-non-react-statics/node_modules/react-is/cjs'
+```
 
-Eliminar node_modules carpeta.
-correr npm install.
-- *lo resolví temporalmente reiniciando*
+What I did: [link](https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc)
 
-### VSC shows how to solve this:
-
-https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
-
-
-cat /proc/sys/fs/inotify/max_user_watches
+```bash
+$ cat /proc/sys/fs/inotify/max_user_watches
 8192
-nano /etc/sysctl.conf
+$ nano /etc/sysctl.conf
     fs.inotify.max_user_watches=524288
-sudo sysctl -p
+$ sudo sysctl -p
 fs.inotify.max_user_watches = 524288
-
-
-## Iconos
-https://iconify.design/icon-sets/
-https://simpleicons.org/
+```
