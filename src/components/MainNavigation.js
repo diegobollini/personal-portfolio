@@ -32,7 +32,7 @@ const MainNavigation = () => {
         to="/"
         onClick={() => setCurrentKey(1)}
       >
-        <h4 style={{ margin: "0" }}>Plataformas Arbusta</h4>
+        <h4 style={{ margin: "0" }}>Diego Bollini</h4>
       </Navbar.Brand>
       <Navbar.Collapse className="justify-content-end">
         <Nav

@@ -21,12 +21,12 @@ const LinkList = () => {
       <div className="mx-lg-5 mr-3 ml-3 d-flex flex-column align-items-center">
         <Image
           alt="logo"
-          width="200"
+          width="150"
           height="150"
-          src={`${process.env.PUBLIC_URL}/pla-team01.svg`}
+          src={`${process.env.PUBLIC_URL}/avatar_diego.png`}
           className="mb-3"
         />
-        <h5 className="mb-4 text-white">#plataformas_it</h5>
+        <h5 className="mb-4 text-white">devops in process</h5>
         {links.map((link) => (
           <LinkButton key={link} link={link} />
         ))}
