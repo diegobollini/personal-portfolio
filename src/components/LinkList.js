@@ -13,7 +13,6 @@ const LinkList = () => {
     "https://arbustanet.slack.com/",
     "https://github.com/ArbustaIT",
     "https://gitlab.com/arbustait",
-    "http://starmeup.com/login.html",
     "https://magic.ly/ciberarbusta",
   ];
 
