@@ -52,3 +52,17 @@ $ nano /etc/sysctl.conf
 $ sudo sysctl -p
 fs.inotify.max_user_watches = 524288
 ```
+
+## deployment with github pages
+
+npm install gh-pages --save-dev
+package.json
+
+"homepage": "http://diegobollini.github.io/personal-portfolio",
+
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+
+npm run deploy
+
