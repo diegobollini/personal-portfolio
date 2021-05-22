@@ -55,14 +55,35 @@ fs.inotify.max_user_watches = 524288
 
 ## deployment with github pages
 
-npm install gh-pages --save-dev
-package.json
+- [dev.to article](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
 
+```bash
+$ npm install gh-pages --save-dev
+```
+
+Edit `package.json`:
+
+```json
 "homepage": "http://diegobollini.github.io/personal-portfolio",
 
-  "scripts": {
+"scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+//    ...
+```
 
-npm run deploy
+```bash
+$ npm run deploy
+```
 
+- [Environment](https://diegobollini.github.io/personal-portfolio)
+
+### deployment with netlify [pending]
+
+- [Doc](https://create-react-app.dev/docs/deployment/#netlify)
+
+```bash
+npm install netlify-cli -g
+netlify deploy
+netlify deploy --prod
+```
