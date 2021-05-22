@@ -53,7 +53,7 @@ $ sudo sysctl -p
 fs.inotify.max_user_watches = 524288
 ```
 
-## deployment with github pages
+### deployment with github pages
 
 - [dev.to article](https://dev.to/yuribenjamin/how-to-deploy-react-app-in-github-pages-2a1f)
 
@@ -76,7 +76,17 @@ Edit `package.json`:
 $ npm run deploy
 ```
 
-- [Environment](https://diegobollini.github.io/personal-portfolio)
+- [GH Environment](https://diegobollini.github.io/personal-portfolio)
+
+### deployment with vercel
+
+- [Vercel Environment](https://personal-portfolio-three-eta.vercel.app/)
+
+Actually it's almost 100% automatic, connect github + vercel, select repository and change `package.json`:
+
+```json
+  "homepage": "https://personal-portfolio-three-eta.vercel.app/",
+```
 
 ### deployment with netlify [pending]
 
